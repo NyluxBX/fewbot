@@ -13,7 +13,7 @@ mongoose.connect("mongodb+srv://nylux:qC0UsVPm6i8SZrzU@astronomy.d0ou8.mongodb.n
 	useUnifiedTopology: true,
 }).then(() => {
 
-	console.log('Connected to MongoDB Database')
+	console.log('Base de données connectée')
 }).catch((error) => console.log(error))
 
 const tempChannel = require("discord.js-temporary-channel");
@@ -59,7 +59,7 @@ fs.readdir('./commands/', (error, f) => {
 	const commandes = f.filter(f => f.split('.').pop() === 'js');
 
 	commandes.forEach(f => {
-		const commande = require(`./Commands/${f}`);
+		const commande = require(`./commands/${f}`);
 		console.log(`- ${f} chargée`);
 
 		client.commands.set(commande.infos.name, commande);
@@ -72,7 +72,7 @@ fs.readdir('./events/', (error, f) => {
 	console.log(`${f.length} event${(f.length <= 1) ? '' : 's'} en chargement`);
 
 	f.forEach(f => {
-		const events = require(`./Events/${f}`);
+		const events = require(`./events/${f}`);
 		const event = f.split('.')[0];
 		console.log(`- ${f} chargé`);
 
