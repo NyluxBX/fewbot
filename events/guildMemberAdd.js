@@ -6,4 +6,5 @@ module.exports = async (client, member) => {
     member.roles.add('867760162403778580')
     member.roles.add('867767672469192754')
     member.roles.add('867777630921031730')
+    member.roles.add('867078962752651274')
 }
