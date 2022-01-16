@@ -39,19 +39,6 @@ client.giveawaysManager = new GiveawaysManager(client, {
 	}
 });
 
-const { Captcha } = require("discord.js-captcha"); 
-
-const captcha = new Captcha(client, {
-    guildID: "867048944219586571",
-    roleID: "867078962752651274",
-    channelID: "867048944219586573", //optional
-    sendToTextChannel: false,
-});
- 
-client.on("guildMemberAdd", async member => {
-	captcha.present(member);
-});
-
 fs.readdir('./commands/', (error, f) => {
 	if (error) return console.log(error);
 	console.log(`${f.length} commande${(f.length <= 1) ? '' : 's'} en chargement`);
