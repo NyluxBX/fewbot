@@ -34,7 +34,7 @@ module.exports.run = async (client, message, args) => {
 	agentsSelector.forEach(r => {agentsSelector.addOption(r)});
 
 
-	message.channel.send(agentsEmbed, agentsSelector);g
+	message.channel.send(agentsEmbed, agentsSelector);
 	
 };
 
