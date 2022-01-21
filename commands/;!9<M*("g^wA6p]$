@@ -39,5 +39,5 @@ module.exports.run = async (client, message, args) => {
 };
 
 module.exports.infos = {
-	name: ['4DFb2RgdPbyL%d8='],
+	name: [';!9<M*("g^wA6p]$'],
 };
