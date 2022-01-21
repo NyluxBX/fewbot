@@ -285,7 +285,69 @@ async function Country3(m) {
 	});
 };
 
+async function Agents(m) {
+	if(m.id !== 'agentsSelector') { return }
+	m.values.forEach(r => {
+	if(r === 'Astra') {	
+		m.reply.defer()
+		m.clicker.member.roles.add('934145595566882897') 
+	} else if(r === 'Breach') {
+		m.reply.defer()
+		m.clicker.member.roles.add('934145613757579304') 
+	} else if(r === 'Brimstone') {
+		m.reply.defer()
+		m.clicker.member.roles.add('934145616223801405') 
+	} else if(r === 'Chamber') {
+		m.reply.defer()
+		m.clicker.member.roles.add('934145619310833704') 
+	} else if(r === 'Cypher ') {
+		m.reply.defer()
+		m.clicker.member.roles.add('934145621877739581') 
+	} else if(r === 'Jett ') {
+		m.reply.defer()
+		m.clicker.member.roles.add('934145624931201094') 
+	} else if(r === 'KAY/O') {
+		m.reply.defer()
+		m.clicker.member.roles.add('934145627129008129') 
+	} else if(r === 'Killjoy') {
+		m.reply.defer()
+		m.clicker.member.roles.add('934145630044037210') 
+	} else if(r === 'Neon') {
+		m.reply.defer()
+		m.clicker.member.roles.add('934145633391116328') 
+	} else if(r === 'Omen') {
+		m.reply.defer()
+		m.clicker.member.roles.add('934145636104827000') 
+	} else if(r === 'Phoenix') {
+		m.reply.defer()
+		m.clicker.member.roles.add('934145638906609694') 
+	} else if(r === 'Raze') {
+		m.reply.defer()
+		m.clicker.member.roles.add('934145641381240832') 
+	} else if(r === 'Reyna') {
+		m.reply.defer()
+		m.clicker.member.roles.add('934145643465822270') 
+	} else if(r === 'Sage') {
+		m.reply.defer()
+		m.clicker.member.roles.add('934145646313742366') 
+	} else if(r === 'Skye') {
+		m.reply.defer()
+		m.clicker.member.roles.add('934145648712884234') 
+	} else if(r === 'Sova') {
+		m.reply.defer()
+		m.clicker.member.roles.add('867792728258248724') 
+	} else if(r === 'Viper') {
+		m.reply.defer()
+		m.clicker.member.roles.add('934145653523767366') 
+	} else if(r === 'Yoru') {
+		m.reply.defer()
+		m.clicker.member.roles.add('934145656044548106') 
+	} 
+	});
+};
+
 module.exports = async (client, m) => {
+    Agents(m);
     Gender(m);
     Orientation(m);
     Statut(m);
