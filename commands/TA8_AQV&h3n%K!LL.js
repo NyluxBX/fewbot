@@ -30,8 +30,27 @@ module.exports.run = async (client, message, args) => {
 
 	const agentsList = [Astra, Breach, Brimstone, Chamber, Cypher, Jett, KAYO, Killjoy, Neon, Omen, Phoenix, Raze, Reyna, Sage, Skye, Sova, Viper, Yoru]
 
-	const agentsSelector = new disbut.MessageMenu().setID('agentsSelector').setPlaceholder('Agents VALORANT').setMaxValues(3).setMinValues(1)
-	agentsList.forEach(r => {agentsSelector.addOption(r)});
+	const agentsSelector = new disbut.MessageMenu()
+	    .setID('agentsSelector')
+	    .setPlaceholder('Agents VALORANT').setMaxValues(3).setMinValues(1)
+	    .addOption(Astra)
+	    .addOption(Breach)
+	    .addOption(Brimstone)
+	    .addOption(Chamber)
+	    .addOption(Cypher)
+	    .addOption(Jett)
+	    .addOption(KAYO)
+	    .addOption(Killjoy)
+	    .addOption(Neon)
+	    .addOption(Omen)
+	    .addOption(Phoenix)
+	    .addOption(Raze)
+	    .addOption(Reyna)
+	    .addOption(Sage)
+	    .addOption(Skye)
+	    .addOption(Sova)
+	    .addOption(Viper)
+	    .addOption(Yoru)
 
 
 	message.channel.send(agentsEmbed, agentsSelector);
