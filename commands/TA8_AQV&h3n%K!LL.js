@@ -10,7 +10,7 @@ module.exports.run = async (client, message, args) => {
 	let agentsEmbed = new Discord.MessageEmbed().setTitle('Rôles Agents').setDescription('Sélectionnez dans la liste ci-dessous les agents que vous maîtrisez. \n \n Tout abus/trolls dans les rôles de pays est passible d\'un bannissement (permanent)').setColor('#045668').setImage('https://i.giphy.com/media/hVVLTGktFcUiQEUfFf/giphy-downsized-large.gif').setFooter(message.guild.name, "https://imgur.com/NpAGT6n.png")
 
 	const Astra = new disbut.MessageMenuOption().setLabel('Astra').setEmoji('931628478334398494').setValue('Astra')
-	const Breach = new disbut.MessageMenuOption().setLabel('Breach').setEmoji('931628645066366986🇿').setValue('Breach')
+	const Breach = new disbut.MessageMenuOption().setLabel('Breach').setEmoji('931628645066366986').setValue('Breach')
 	const Brimstone = new disbut.MessageMenuOption().setLabel('Brimstone').setEmoji('931627490722607146󠁧󠁢󠁥󠁮󠁧󠁿').setValue('Brimstone')
 	const Chamber = new disbut.MessageMenuOption().setLabel('Chamber').setEmoji('931628045431898163').setValue('Chamber')
 	const Cypher = new disbut.MessageMenuOption().setLabel('Cypher').setEmoji('931628296523886592').setValue('Cypher')
@@ -19,7 +19,7 @@ module.exports.run = async (client, message, args) => {
 	const Killjoy = new disbut.MessageMenuOption().setLabel('Killjoy').setEmoji('931628031288688641').setValue('Killjoy')
 	const Neon = new disbut.MessageMenuOption().setLabel('Neon').setEmoji('931628213338263582').setValue('Neon')
 	const Omen = new disbut.MessageMenuOption().setLabel('Omen').setEmoji('931627923197272134').setValue('Omen')
-	const Phoenix = new disbut.MessageMenuOption().setLabel('Phoenix').setEmoji('931628414962634753🇿').setValue('Phoenix')
+	const Phoenix = new disbut.MessageMenuOption().setLabel('Phoenix').setEmoji('931628414962634753').setValue('Phoenix')
 	const Raze = new disbut.MessageMenuOption().setLabel('Raze').setEmoji('931628585087807518󠁧󠁢󠁥󠁮󠁧󠁿').setValue('Raze')
 	const Reyna = new disbut.MessageMenuOption().setLabel('Reyna').setEmoji('931628524597559337').setValue('Reyna')
 	const Sage = new disbut.MessageMenuOption().setLabel('Sage').setEmoji('931628357198696449').setValue('Sage')
