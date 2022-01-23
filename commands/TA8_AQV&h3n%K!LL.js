@@ -11,7 +11,6 @@ module.exports.run = async (client, message, args) => {
 
 	const Astra = new disbut.MessageMenuOption().setLabel('Astra').setEmoji('931628478334398494').setValue('Astra')
 	const Breach = new disbut.MessageMenuOption().setLabel('Breach').setEmoji('931628645066366986').setValue('Breach')
-	const Brimstone = new disbut.MessageMenuOption().setLabel('Brimstone').setEmoji('931627490722607146󠁧󠁢󠁥󠁮󠁧󠁿').setValue('Brimstone')
 	const Chamber = new disbut.MessageMenuOption().setLabel('Chamber').setEmoji('931628045431898163').setValue('Chamber')
 	const Cypher = new disbut.MessageMenuOption().setLabel('Cypher').setEmoji('931628296523886592').setValue('Cypher')
 	const Jett = new disbut.MessageMenuOption().setLabel('Jett').setEmoji('931628468033175562').setValue('Jett')
@@ -28,14 +27,13 @@ module.exports.run = async (client, message, args) => {
 	const Viper = new disbut.MessageMenuOption().setLabel('Viper').setEmoji('931627840032628766').setValue('Viper')
 	const Yoru = new disbut.MessageMenuOption().setLabel('Yoru').setEmoji('931628576636301332').setValue('Yoru')*/
 
-	const agentsList = [Astra, Breach, Brimstone, Chamber, Cypher, Jett, /*Kayo, Killjoy, Neon, Omen, Phoenix, Raze, Reyna, Sage, Skye, Sova, Viper, Yoru*/]
+	const agentsList = [Astra, Breach, Chamber, Cypher, Jett, /*Kayo, Killjoy, Neon, Omen, Phoenix, Raze, Reyna, Sage, Skye, Sova, Viper, Yoru*/]
 
 	const agentsSelector = new disbut.MessageMenu()
 	    .setID('agentsSelector')
 	    .setPlaceholder('Agents VALORANT').setMaxValues(3).setMinValues(1)
 	    .addOption(Astra)
 	    .addOption(Breach)
-	    .addOption(Brimstone)
 	    .addOption(Chamber)
 	    .addOption(Cypher)
 	    .addOption(Jett)
