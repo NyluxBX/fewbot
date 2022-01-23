@@ -20,7 +20,7 @@ module.exports.run = async (client, message, args) => {
 	const Neon = new disbut.MessageMenuOption().setLabel('Neon').setEmoji('931628213338263582').setValue('Neon')
 	const Omen = new disbut.MessageMenuOption().setLabel('Omen').setEmoji('931627923197272134').setValue('Omen')
 	const Phoenix = new disbut.MessageMenuOption().setLabel('Phoenix').setEmoji('931628414962634753').setValue('Phoenix')
-	const Raze = new disbut.MessageMenuOption().setLabel('Raze').setEmoji('931628585087807518󠁧󠁢󠁥󠁮󠁧󠁿').setValue('Raze')
+	const Raze = new disbut.MessageMenuOption().setLabel('Raze').setEmoji('931628585087807518').setValue('Raze')
 	const Reyna = new disbut.MessageMenuOption().setLabel('Reyna').setEmoji('931628524597559337').setValue('Reyna')
 	const Sage = new disbut.MessageMenuOption().setLabel('Sage').setEmoji('931628357198696449').setValue('Sage')
 	const Skye = new disbut.MessageMenuOption().setLabel('Skye').setEmoji('931628652448325633').setValue('Skye')
