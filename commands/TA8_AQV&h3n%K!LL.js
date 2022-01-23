@@ -7,7 +7,7 @@ module.exports.run = async (client, message, args) => {
 	//----------------------------------------------------------- AGENTS ------------------------------------------------------------//
 	
 	// Embed Agents
-	let agentsEmbed = new Discord.MessageEmbed().setTitle('Rôles Agents').setDescription('Sélectionnez dans la liste ci-dessous les agents que vous maîtrisez. \n \n Tout abus/trolls dans les rôles de pays est passible d\'un bannissement (permanent)').setColor('#045668').setImage('https://i.giphy.com/media/hVVLTGktFcUiQEUfFf/giphy-downsized-large.gif').setFooter(message.guild.name, "https://imgur.com/NpAGT6n.png")
+	let agentsEmbed = new Discord.MessageEmbed().setTitle('Rôles Agents').setDescription('Sélectionnez dans la liste ci-dessous les agents que vous maîtrisez. \n \n Tout abus/trolls dans les rôles d\'agents est passible d\'un bannissement (permanent)').setColor('#045668').setImage('https://i.giphy.com/media/hVVLTGktFcUiQEUfFf/giphy-downsized-large.gif').setFooter(message.guild.name, "https://imgur.com/NpAGT6n.png")
 
 	const Astra = new disbut.MessageMenuOption().setLabel('Astra').setEmoji('931628478334398494').setValue('Astra')
 	const Breach = new disbut.MessageMenuOption().setLabel('Breach').setEmoji('931628645066366986').setValue('Breach')
