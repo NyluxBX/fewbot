@@ -306,7 +306,7 @@ async function Agents(m) {
 	} else if(r === 'Jett ') {
 		m.reply.defer()
 		m.clicker.member.roles.add('934145624931201094') 
-	} else if(r === 'KAY/O') {
+	} else if(r === 'Kayo') {
 		m.reply.defer()
 		m.clicker.member.roles.add('934145627129008129') 
 	} else if(r === 'Killjoy') {
