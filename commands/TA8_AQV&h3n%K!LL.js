@@ -15,7 +15,7 @@ module.exports.run = async (client, message, args) => {
 	const Chamber = new disbut.MessageMenuOption().setLabel('Chamber').setEmoji('931628045431898163').setValue('Chamber')
 	const Cypher = new disbut.MessageMenuOption().setLabel('Cypher').setEmoji('931628296523886592').setValue('Cypher')
 	const Jett = new disbut.MessageMenuOption().setLabel('Jett').setEmoji('931628468033175562').setValue('Jett')
-	const KAYO = new disbut.MessageMenuOption().setLabel('KAY/O').setEmoji('931628298612641842').setValue('KAY/O')
+	const Kayo = new disbut.MessageMenuOption().setLabel('KAY/O').setEmoji('931628298612641842').setValue('KAY/O')
 	const Killjoy = new disbut.MessageMenuOption().setLabel('Killjoy').setEmoji('931628031288688641').setValue('Killjoy')
 	const Neon = new disbut.MessageMenuOption().setLabel('Neon').setEmoji('931628213338263582').setValue('Neon')
 	const Omen = new disbut.MessageMenuOption().setLabel('Omen').setEmoji('931627923197272134').setValue('Omen')
@@ -28,7 +28,7 @@ module.exports.run = async (client, message, args) => {
 	const Viper = new disbut.MessageMenuOption().setLabel('Viper').setEmoji('931627840032628766').setValue('Viper')
 	const Yoru = new disbut.MessageMenuOption().setLabel('Yoru').setEmoji('931628576636301332').setValue('Yoru')
 
-	const agentsList = [Astra, Breach, Brimstone, Chamber, Cypher, Jett, KAYO, Killjoy, Neon, Omen, Phoenix, Raze, Reyna, Sage, Skye, Sova, Viper, Yoru]
+	const agentsList = [Astra, Breach, Brimstone, Chamber, Cypher, Jett, Kayo, Killjoy, Neon, Omen, Phoenix, Raze, Reyna, Sage, Skye, Sova, Viper, Yoru]
 
 	const agentsSelector = new disbut.MessageMenu()
 	    .setID('agentsSelector')
@@ -39,7 +39,7 @@ module.exports.run = async (client, message, args) => {
 	    .addOption(Chamber)
 	    .addOption(Cypher)
 	    .addOption(Jett)
-	    .addOption(KAYO)
+	    .addOption(Kayo)
 	    .addOption(Killjoy)
 	    .addOption(Neon)
 	    .addOption(Omen)
